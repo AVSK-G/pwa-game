@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWA Game</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2196f3">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .game {
+      text-align: center;
+    }
+    button {
+      padding: 12px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background: #2196f3;
+      color: white;
+    }
+    .score {
+      font-size: 22px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="game">
+  <h1>🎮 Tap Game</h1>
+  <div class="score">Score: <span id="score">0</span></div>
+  <button onclick="tap()">TAP ME</button>
+</div>
+
+<script>
+  let score = 0;
+  function tap() {
+    score++;
+    document.getElementById("score").innerText = score;
+  }
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
+</script>
+
+</body>
+  </html>
