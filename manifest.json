@@ -1,21 +1,21 @@
 {
-  "name": "PWA Game",
+  "name": "My PWA Game",
   "short_name": "Game",
-  "start_url": "./index.html",
+  "start_url": "/pwa-game/index.html",
+  "scope": "/pwa-game/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
-  "orientation": "portrait",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "/pwa-game/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icon-512.png",
+      "src": "/pwa-game/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ]
-} 
+}
