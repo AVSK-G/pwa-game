@@ -1,4 +1,4 @@
-const CACHE_NAME = "pwa-game-v2";
+const CACHE_NAME = "pwa-game-v3";
 
 const urlsToCache = [
   "./",
