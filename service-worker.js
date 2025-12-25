@@ -1,18 +1,16 @@
-const CACHE_NAME = "pwa-game-v3";
+const CACHE_NAME = "pwa-game-v5";
 
 const urlsToCache = [
-  "./",
-  "./index.html",
-  "./manifest.json",
-  "./icon-192.png",
-  "./icon-512.png"
+  "/pwa-game/",
+  "/pwa-game/index.html",
+  "/pwa-game/manifest.json",
+  "/pwa-game/icon-192.png",
+  "/pwa-game/icon-512.png"
 ];
 
 self.addEventListener("install", event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
-      return cache.addAll(urlsToCache);
-    })
+    caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
   );
 });
 
