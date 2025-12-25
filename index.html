@@ -2,26 +2,23 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My PWA Game</title>
 
-  <link rel="manifest" href="/pwa-game/manifest.json">
-  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2196f3">
 
 </head>
 <body>
-
   <h1>🎮 My PWA Game</h1>
   <p>यह एक Simple PWA Game है</p>
 
   <script>
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
-        navigator.serviceWorker.register("/pwa-game/service-worker.js");
+        navigator.serviceWorker.register("service-worker.js");
       });
     }
   </script>
-
 </body>
 </html>
