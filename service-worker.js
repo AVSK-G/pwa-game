@@ -1,4 +1,4 @@
-const CACHE_NAME = "kids-game-v8"; // 🔴 हर update पर v++ करना
+const CACHE_NAME = "kids-game-v9"; // 🔴 हर update पर v++ करना
 
 const CORE_FILES = [
   "./",
